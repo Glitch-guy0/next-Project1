@@ -3,10 +3,10 @@ export default function signinPage() {
     // sets background and centers the form page
     <div className=" bg-slate-200 w-full h-full flex items-center justify-center">
       {/* for styling the form page */}
-      <div className="bg-slate-100 shadow-lg p-3 rounded-lg max-w-[360px] w-2/3">
-        <h1 className="text-center font-bold text-2xl">Sign in</h1>
+      <div className=" md:w-[95%] md:h-[70%] md:flex justify-between items-center bg-slate-100 shadow-lg p-3 rounded-lg w-2/3">
+        <h1 className="md:mx-auto text-center font-bold text-2xl">Sign in</h1>
 
-        <form action="" className="flex flex-col gap-4  mt-4">
+        <form action="" className=" md:mr-14 flex flex-col gap-4  mt-4 md:w-[40%]">
           <input
             type="text"
             name="username"
@@ -37,7 +37,7 @@ export default function signinPage() {
             />
           {/* error for password */}
           <p className="peer-invalid/password:block hidden text-rose-400 text-xs">*minimum 8 characters should contain atleast one lowcase, uppercase & number</p>
-          <input type="submit" value="Sign in" className="p-2 bg-cyan-200 font-semibold text-xl rounded-lg" />
+          <input type="submit" value="Sign in" className="p-2 bg-cyan-200 font-semibold text-xl rounded-lg active:bg-sky-300" />
         </form>
       </div>
     </div>
